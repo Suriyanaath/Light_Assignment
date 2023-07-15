@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #b{
+        height: 400px;
+        width: px;
+     }
+     .on{
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        background: -webkit-radial-gradient(yellow,lightgray);
+     }
+     .off{
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        background: -webkit-radial-gradient(red,lightgray);
+     }
+    </style>
+</head>
+<body>
+    <button class="on" onclick="turnon()" >on</button>
+    <img id="b"src="assert/3-bulb-png-image.png" alt="assert/4-yellow-light-bulb-png-image.png">
+    <button class="off" onclick="turnoff()">off</button>
+     <script>
+     function turnon(){
+         document.getElementById("b").src="assert/4-yellow-light-bulb-png-image.png"
+     }
+     function turnoff(){
+        document.getElementById("b").src="assert/3-bulb-png-image.png"
+     }
+    </script>
+</body>
+</html>
